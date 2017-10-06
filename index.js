@@ -56,7 +56,8 @@ console.log (result);
 
 function total() {
   var totalPrice = 0;
-  for (var i = 0; i < cart.length; i++) {
+  var size = cart.length;
+  for (var i = 0; i < size; i++) {
     var name = Object.keys(cart[i])[0];
     var price = cart[i][name];
     totalPrice = totalPrice + price;
